@@ -1,0 +1,116 @@
+
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1 viewport-fit=cover, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <style>
+      body {
+        background-color: #080808;
+        margin: 0 auto;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+      #bp-web-widget-container {
+        max-height: 90%;
+        width: 481px;
+        margin: auto;
+        flex-grow: 2;
+      }
+      #bp-web-widget-container div {
+        height: 100%;
+      }
+      .webchatIframe {
+        position: right!important;
+      }
+      .container{
+        
+    color: #ff004f;
+    margin-left: 100px;
+    margin-top: 100px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+      
+      h1{
+       animation:forwards ;
+    margin-top: 15px;
+    font-size: 130px;
+    color: #ff004f;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 35px;
+    color: white;
+    font-family: system-ui;
+    margin-left: 140px;
+    margin-top: 2px;
+    margin-bottom: 100px
+}
+.container::first-letter {
+    color: #ff004f;
+    font-size: 150px;
+}
+      
+@media (max-width:600px) {
+  .container{
+        
+        color: #ff004f;
+        margin-top: 100px;
+        margin-left: 30px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .container h1{
+        margin-left: 0px;
+        margin-right: 400px;
+        margin-top: 40%;
+        font-size: 90px;
+        display: flexbox;
+
+    }
+    .container p {
+        font-size: 20px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-left: 20px;
+    }
+}
+    </style>
+    <title>Chatbot</title>
+  </head>
+  <body>
+   <div class="container">
+    <h1> INSPECT.</h1>
+    <p>SEARCH.  FIND.    EXPLORE. </p>
+   </div>
+  <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script>
+  window.botpressWebChat.init({
+      "composerPlaceholder": "Chat with bot",
+      "botConversationDescription": "Made by Suraj Joshi",
+      "botId": "9ad9a3c2-943f-44ff-8ecd-6eb79c23892e",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "9ad9a3c2-943f-44ff-8ecd-6eb79c23892e",
+      "webhookId": "15424897-e1ee-4b80-9d26-4dd587fa16a1",
+      "lazySocket": false,
+      "themeName": "prism",
+      "frontendVersion": "v9",
+      "showPoweredBy": false,
+      "theme": "prism",
+      "themeColor": "#2563eb",
+      "hideWidget": true,
+      "disableAnimations": true,
+      "closeOnEscape": false,
+      "showConversationsButton":false,
+      "enableTranscriptDownload": false,
+      "className": "webchatIframe",
+      "containerWidth": "100%25",
+      "layoutWidth": "100%25",
+      "showCloseButton": false
+  });
+window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
+</script>
+
+  </body>
+</html>
